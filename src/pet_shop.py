@@ -42,3 +42,7 @@ def add_pet_to_stock(pet_shop, new_pet):
 # At this point I'm not sure if that would pass the test
 # but it seems like that would be better than trying to pass an entire dictionary into a funciton?
 # test passing for now, going to come back to it at the end of the task, if it doesn't pass so be it, will comment it out.
+
+def get_customer_cash(customer):
+    return customer["cash"]
+
