@@ -34,3 +34,11 @@ def remove_pet_by_name(pet_shop, pet_name):
     for pet in pet_shop["pets"]:
         if pet_name == pet["name"]:
             pet_shop["pets"].remove(pet)
+
+def add_pet_to_stock(pet_shop, new_pet):
+    pet_shop["pets"].append(new_pet)
+
+# I want to create something that can define the inputs for all of the values in the new_pet dictionary
+# At this point I'm not sure if that would pass the test
+# but it seems like that would be better than trying to pass an entire dictionary into a funciton?
+# test passing for now, going to come back to it at the end of the task, if it doesn't pass so be it, will comment it out.
