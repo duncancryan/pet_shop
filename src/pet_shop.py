@@ -46,3 +46,9 @@ def add_pet_to_stock(pet_shop, new_pet):
 def get_customer_cash(customer):
     return customer["cash"]
 
+# come back and modify the above so that it can identify a customer by name to return their cash
+# hint: will probably involve a for loop and if statement, from there should be straightforward
+
+def remove_customer_cash(customer, cash):
+    customer["cash"] = customer["cash"] - cash
+
