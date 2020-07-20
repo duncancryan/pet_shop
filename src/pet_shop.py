@@ -36,10 +36,6 @@ def remove_pet_by_name(pet_shop, pet_name):
 
 def add_pet_to_stock(pet_shop, new_pet):
     pet_shop["pets"].append(new_pet)
-    new_pet["name"] = input("What is the pets name? ")
-    new_pet["pet_type"] = input("What type of animal are they? ")
-    new_pet["brred"] = input("what breed are they? ")
-    new_pet["price"] = input("How much will they cost? ")
 
 def get_customer_cash(customer):
     return customer["cash"]
@@ -66,9 +62,4 @@ def sell_pet_to_customer(pet_shop, pet, customer):
             increase_pets_sold(pet_shop, 1)
             remove_customer_cash(customer, pet["price"])
             add_or_remove_cash(pet_shop, pet["price"])
-        else:
-            return "Insufficient Funds"
-    else:
-        return "Pet Not Found"
-
 
